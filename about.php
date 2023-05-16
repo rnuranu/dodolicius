@@ -28,12 +28,12 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
-          <li class="active"><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+      <ul class="right">
+          <li><a href="about.php">About</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
     
           if(isset($_SESSION['username'])){
@@ -54,10 +54,9 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <div class="row" style="margin-top:30px;">
       <div class="small-12">
-        <p>Dodolicius Store is a project on E-Commerce Website. All products listed are fake. This project just gives a preview to what a real world implementation of E-Commerce Website will look like. Well if you do like the website then visit
-        <a href="http://www.techbarrack.com" target="_blank" rel="noopener noreferrer" title="Tech Barrack Solutions">Tech Barrack Solutions</a>.</p>
-
-        <p>Why BOLT? I am a big fan of Usain Bolt. He is diligent and tries to surpass his previous achievements. And lastly, it was an instant thought. So went for it.</p>
+        <p>Dodolicius Store adalah proyek di Website E-Commerce. Semua produk yang tercantum adalah palsu. Proyek ini hanya memberikan pratinjau seperti apa implementasi Situs Web E-Commerce di dunia nyata nantinya.<p>
+        
+        
 
         <footer>
            <p style="text-align:center; font-size:0.8em;">&copy; Dodolicius Store. All Rights Reserved.</p>

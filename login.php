@@ -31,12 +31,12 @@ if(isset($_SESSION["username"])){
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
 
           if(isset($_SESSION['username'])){

@@ -26,12 +26,12 @@ include 'config.php';
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li class='active'><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
 
           if(isset($_SESSION['username'])){
@@ -69,15 +69,15 @@ include 'config.php';
               echo '<div class="large-4 columns">';
               echo '<p><h3>'.$obj->product_name.'</h3></p>';
               echo '<img src="images/products/'.$obj->product_img_name.'"/>';
-              echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
-              echo '<p><strong>Description</strong>: '.$obj->product_desc.'</p>';
-              echo '<p><strong>Units Available</strong>: '.$obj->qty.'</p>';
-              echo '<p><strong>Price (Per Unit)</strong>: '.$currency.$obj->price.'</p>';
+              echo '<p><strong>Kode Barang</strong>: '.$obj->product_code.'</p>';
+              echo '<p><strong>Deskripsi</strong>: '.$obj->product_desc.'</p>';
+              echo '<p><strong>Stok</strong>: '.$obj->qty.'</p>';
+              echo '<p><strong>Harga</strong>: '.$obj->price.'</p>';
 
 
 
               if($obj->qty > 0){
-                echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Add To Cart" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
+                echo '<p><a href="update-cart.php?action=add&id='.$obj->id.'"><input type="submit" value="Beli" style="clear:both; background: #0078A0; border: none; color: #fff; font-size: 1em; padding: 10px;" /></a></p>';
               }
               else {
                 echo 'Out Of Stock!';

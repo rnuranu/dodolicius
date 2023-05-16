@@ -26,13 +26,14 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
+
 
           if(isset($_SESSION['username'])){
             echo '<li><a href="account.php">My Account</a></li>';
@@ -52,9 +53,8 @@ if(session_id() == '' || !isset($_SESSION)){session_start();}
 
     <div class="row" style="margin-top:10px;">
       <div class="small-12">
-        <p>Success. Whatever task you performed, has been executed successfully. Congrats!</p>
-        <p>In case you purchased a product, then please check your spam in email for the receipt.</p>
-
+      <p>Sukses. Tugas apa pun yang Anda lakukan, telah berhasil dijalankan. Selamat!</p>
+         <p>Jika Anda membeli produk, silakan periksa spam Anda di email untuk tanda terima.</p>
 
         <footer style="margin-top:10px;">
            <p style="text-align:center; font-size:0.8em;">&copy; Dodolicius Store. All Rights Reserved.</p>

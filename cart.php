@@ -25,12 +25,12 @@ include 'config.php';
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li class="active"><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
 
           if(isset($_SESSION['username'])){
@@ -53,17 +53,17 @@ include 'config.php';
       <div class="large-12">
         <?php
 
-          echo '<p><h3>Your Shopping Cart</h3></p>';
+          echo '<p><h3>Pesanan Saya</h3></p>';
 
           if(isset($_SESSION['cart'])) {
 
             $total = 0;
             echo '<table>';
             echo '<tr>';
-            echo '<th>Code</th>';
-            echo '<th>Name</th>';
+            echo '<th>Kode</th>';
+            echo '<th>Nama</th>';
             echo '<th>Quantity</th>';
-            echo '<th>Cost</th>';
+            echo '<th>Harga</th>';
             echo '</tr>';
             foreach($_SESSION['cart'] as $product_id => $quantity) {
 
@@ -111,7 +111,7 @@ include 'config.php';
         }
 
         else {
-          echo "You have no items in your shopping cart.";
+          echo "Anda tidak memiliki barang di keranjang belanja Anda.";
         }
 
 

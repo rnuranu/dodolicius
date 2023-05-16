@@ -30,12 +30,12 @@ include 'config.php';
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li class="active"><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
 
           if(isset($_SESSION['username'])){
@@ -56,7 +56,7 @@ include 'config.php';
 
     <div class="row" style="margin-top:10px;">
       <div class="large-12">
-        <h3>My COD Orders</h3>
+        <h3>Pesanan Saya</h3>
         <hr>
 
         <?php
@@ -66,12 +66,12 @@ include 'config.php';
             while($obj = $result->fetch_object()) {
               //echo '<div class="large-6">';
               echo '<p><h4>Order ID ->'.$obj->id.'</h4></p>';
-              echo '<p><strong>Date of Purchase</strong>: '.$obj->date.'</p>';
-              echo '<p><strong>Product Code</strong>: '.$obj->product_code.'</p>';
-              echo '<p><strong>Product Name</strong>: '.$obj->product_name.'</p>';
-              echo '<p><strong>Price Per Unit</strong>: '.$obj->price.'</p>';
-              echo '<p><strong>Units Bought</strong>: '.$obj->units.'</p>';
-              echo '<p><strong>Total Cost</strong>: '.$currency.$obj->total.'</p>';
+              echo '<p><strong>Tanggal Pembelian</strong>: '.$obj->date.'</p>';
+              echo '<p><strong>Kode Barang</strong>: '.$obj->product_code.'</p>';
+              echo '<p><strong>Nama Item</strong>: '.$obj->product_name.'</p>';
+              echo '<p><strong>Harga Per Unit</strong>: '.$obj->price.'</p>';
+              echo '<p><strong>Unit Dibeli</strong>: '.$obj->units.'</p>';
+              echo '<p><strong>Total</strong>: '.$obj->total.'</p>';
               //echo '</div>';
               //echo '<div class="large-6">';
               //echo '<img src="images/products/sports_band.jpg">';

@@ -32,19 +32,19 @@ include 'config.php';
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="index.php">BOLT Sports Shop</a></h1>
+          <h1><a href="index.php">Dodolicius Store</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
 
       <section class="top-bar-section">
       <!-- Right Nav Section -->
-        <ul class="right">
+      <ul class="right">
           <li><a href="about.php">About</a></li>
-          <li><a href="products.php">Products</a></li>
-          <li><a href="cart.php">View Cart</a></li>
-          <li><a href="orders.php">My Orders</a></li>
-          <li><a href="contact.php">Contact</a></li>
+          <li><a href="products.php">Produk</a></li>
+          <li><a href="cart.php">Keranjang</a></li>
+          <li><a href="orders.php">Pesanan</a></li>
+          <li><a href="contact.php">Kontak</a></li>
           <?php
 
           if(isset($_SESSION['username'])){
@@ -67,9 +67,9 @@ include 'config.php';
       <div class="small-12">
         <p><?php echo '<h3>Hi ' .$_SESSION['fname'] .'</h3>'; ?></p>
 
-        <p><h4>Account Details</h4></p>
+        <p><h4>Detail akun</h4></p>
 
-        <p>Below are your details in the database. If you wish to change anything, then just enter new data in text box and click on update.</p>
+        <p>Di bawah ini adalah detail Anda di database. Jika Anda ingin mengubah apa pun, cukup masukkan data baru di kotak teks dan klik perbarui.</p>
       </div>
     </div>
 
